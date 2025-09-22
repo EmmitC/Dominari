@@ -62,47 +62,63 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-primary-50 via-surface to-accent-50 overflow-hidden">
-        <div class="absolute inset-0 bg-black opacity-5"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-            <div class="text-center">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary leading-tight mb-6">
-                    Literary 
-                    <span class="text-accent">Community</span> 
-                    Hub
-                </h1>
-                <p class="text-lg md:text-xl text-text-secondary font-body leading-relaxed max-w-3xl mx-auto mb-8">
-                    Connect with passionate readers, join meaningful discussions, and discover your next literary obsession through our vibrant community of book lovers.
-                </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#book-clubs" class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-cta font-medium hover:bg-accent-700 literary-transition">
-                        Join a Book Club
-                    </a>
-                    <a href="#discussions" class="border-2 border-primary text-primary px-8 py-4 rounded-lg text-lg font-cta font-medium hover:bg-primary hover:text-white literary-transition">
-                        Browse Discussions
-                    </a>
-                </div>
+   <!-- Hero Section -->
+<section class="relative bg-gradient-to-br from-primary/5 via-surface to-accent/5 overflow-hidden">
+  <!-- Subtle overlay for depth -->
+  <div class="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent"></div>
 
-                <!-- Community Stats -->
-                <div class="flex items-center justify-center space-x-8 pt-8">
-                    <div class="text-center">
-                        <div class="text-2xl font-display font-bold text-primary">2,847</div>
-                        <div class="text-sm text-text-secondary">Active Members</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-2xl font-display font-bold text-primary">156</div>
-                        <div class="text-sm text-text-secondary">Book Clubs</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-2xl font-display font-bold text-primary">1,234</div>
-                        <div class="text-sm text-text-secondary">Discussions</div>
-                    </div>
-                </div>
-            </div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <!-- Left Column: Headline + CTA + Stats -->
+    <div class="text-center lg:text-left space-y-8">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary leading-tight">
+        Literary <span class="text-accent">Community</span> Hub
+      </h1>
+
+      <p class="text-lg md:text-xl text-text-secondary font-body leading-relaxed max-w-xl mx-auto lg:mx-0">
+        Connect with passionate readers, join meaningful discussions, and discover your next literary obsession through our vibrant community of book lovers.
+      </p>
+
+      <!-- Call to Action Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+        <a href="#book-clubs" class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-cta font-medium hover:bg-accent-700 literary-transition">
+          Join a Book Club
+        </a>
+        <a href="#discussions" class="border-2 border-primary text-primary px-8 py-4 rounded-lg text-lg font-cta font-medium hover:bg-primary hover:text-white literary-transition">
+          Browse Discussions
+        </a>
+      </div>
+
+      <!-- Community Stats -->
+      <div class="flex items-center justify-center lg:justify-start space-x-8 pt-6">
+        <div class="text-center">
+          <div class="text-2xl font-display font-bold text-primary">2,847</div>
+          <div class="text-sm text-text-secondary">Active Members</div>
         </div>
-    </section>
+        <div class="text-center">
+          <div class="text-2xl font-display font-bold text-primary">156</div>
+          <div class="text-sm text-text-secondary">Book Clubs</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl font-display font-bold text-primary">1,234</div>
+          <div class="text-sm text-text-secondary">Discussions</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Image Grid -->
+    <div class="grid grid-cols-2 gap-4 transform rotate-1 hover:rotate-0 transition-transform duration-700">
+      <div class="space-y-4">
+        <img src="../images/dominari-community (1).jpg" alt="Dominari community" class="w-full h-64 object-cover rounded-lg literary-shadow hover:scale-105 hover:literary-shadow-prominent transition-all duration-300" loading="lazy" />
+        <img src="../images/dominari-community (6).jpg" alt="Dominari community" class="w-full h-48 object-cover rounded-lg literary-shadow hover:scale-105 hover:literary-shadow-prominent transition-all duration-300" loading="lazy" />
+      </div>
+      <div class="space-y-4 mt-8">
+        <img src="../images/dominari-community (3).jpg" alt="Dominari community" class="w-full h-48 object-cover rounded-lg literary-shadow hover:scale-105 hover:literary-shadow-prominent transition-all duration-300" loading="lazy" />
+        <img src="../images/dominari-community (4).jpg" alt="Dominari community" class="w-full h-64 object-cover rounded-lg literary-shadow hover:scale-105 hover:literary-shadow-prominent transition-all duration-300" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Community Navigation Tabs -->
     <section class="bg-white border-b border-border">
