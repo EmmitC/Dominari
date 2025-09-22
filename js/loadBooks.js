@@ -61,6 +61,8 @@ async function loadBooks() {
 document.addEventListener('DOMContentLoaded', loadBooks);
 
 
+
+//to keep track of all books and displayed books
 let allBooks = []; // stores full books list
 let displayedBooks = []; // stores currently displayed books
 

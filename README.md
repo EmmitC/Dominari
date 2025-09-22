@@ -382,3 +382,32 @@ Dominari Media WebPage, in development
                         </div>
                     </div>
                 </div>
+
+
+
+                // Simulate real-time community activity
+        function updateCommunityStats() {
+            const stats = document.querySelectorAll('.text-2xl.font-display.font-bold.text-primary');
+            stats.forEach((stat, index) => {
+                const currentValue = parseInt(stat.textContent.replace(/,/g, ''));
+                const increment = Math.floor(Math.random() * 3) + 1;
+                const newValue = currentValue + increment;
+                stat.textContent = newValue.toLocaleString();
+            });
+        }
+
+
+
+        
+            <!-- Responsive Video Container -->
+<div class="relative max-w-4xl mx-auto my-12 aspect-video rounded-2xl overflow-hidden literary-shadow hover:literary-shadow-prominent literary-transition">
+  <iframe 
+    class="absolute inset-0 w-full h-full"
+    src="https://www.youtube.com/embed/yux2X2vAFoU?si=GaImhXzzpGc_8HSd&amp;start=9" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</div>

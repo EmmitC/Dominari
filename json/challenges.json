@@ -1,0 +1,38 @@
+{
+  "progress": {
+    "booksRead": { "current": 23, "goal": 50 },
+    "genresExplored": { "current": 8, "goal": 12 },
+    "pagesRead": { "current": 8432, "goal": 10000 }
+  },
+  "badges": [
+    { "title": "Speed Reader", "icon": "star", "color": "accent" },
+    { "title": "Genre Explorer", "icon": "check-circle", "color": "secondary" },
+    { "title": "Community Star", "icon": "thumbs-up", "color": "success" }
+  ],
+  "challenges": [
+    {
+      "title": "Monthly Genre Challenge",
+      "status": "Active",
+      "statusColor": "accent",
+      "description": "Explore a different genre each month. December's focus: Historical Fiction",
+      "participants": 1247,
+      "buttonColor": "accent"
+    },
+    {
+      "title": "Page Turner Marathon",
+      "status": "Popular",
+      "statusColor": "secondary",
+      "description": "Read 10,000 pages in 3 months. Track your progress and compete with friends!",
+      "participants": 892,
+      "buttonColor": "primary"
+    },
+    {
+      "title": "Debut Author Discovery",
+      "status": "New",
+      "statusColor": "success",
+      "description": "Support emerging voices by reading 5 debut novels this quarter",
+      "participants": 456,
+      "buttonColor": "primary"
+    }
+  ]
+}
