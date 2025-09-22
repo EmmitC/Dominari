@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dominari&trade; Events</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Join Dominari Publishing's literary events - virtual author readings, book launches, literary festivals, and exclusive conversations with celebrated writers." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdominarip9155back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-white literary-shadow sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="./index2.html" class="flex items-center">
+                      
+                        <span class="ml-2 text-xl font-display font-bold text-primary">Dominari</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="./index2.html" class="text-text-secondary hover:text-primary literary-transition px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="./books.html" class="text-text-secondary hover:text-primary literary-transition px-3 py-2 text-sm font-medium">Books</a>
+                        <a href="community_hub.html" class="text-text-secondary hover:text-primary literary-transition px-3 py-2 text-sm font-medium">Community</a>
+                        <a href="./events.html" class="text-primary font-medium border-b-2 border-accent px-3 py-2 text-sm">Events</a>
+                        <a href="./about.html" class="text-text-secondary hover:text-primary literary-transition px-3 py-2 text-sm font-medium">About</a>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="./books.html" class="bg-accent text-white px-6 py-2 rounded-md text-sm font-cta font-medium hover:bg-accent-700 literary-transition">
+                        Explore Books
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary literary-transition" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-border">
+                    <a href="./index2.html" class="text-text-secondary hover:text-primary block px-3 py-2 text-base literary-transition">Home</a>
+                    <a href="./books.html" class="text-text-secondary hover:text-primary block px-3 py-2 text-base literary-transition">Books</a>
+                    <a href="community_hub.html" class="text-text-secondary hover:text-primary block px-3 py-2 text-base literary-transition">Community</a>
+                    <a href="./events.html" class="text-primary font-medium block px-3 py-2 text-base border-l-4 border-accent bg-accent-50">Events</a>
+                    <a href="./about.html" class="text-text-secondary hover:text-primary block px-3 py-2 text-base literary-transition">About</a>
+                    <a href="./books.html" class="bg-accent text-white block px-3 py-2 text-base font-medium rounded-md mt-4 text-center">Explore Books</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 via-surface to-accent-50 overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-5"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary leading-tight mb-6">
+                    Literary Events & 
+                    <span class="text-accent">Conversations</span>
+                </h1>
+                <p class="text-lg md:text-xl text-text-secondary font-body leading-relaxed max-w-3xl mx-auto mb-8">
+                    Join intimate conversations with celebrated authors, attend exclusive book launches, and immerse yourself in the vibrant world of contemporary literature through our curated events.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#upcoming-events" class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-cta font-medium hover:bg-accent-700 literary-transition">
+                        View Upcoming Events
+                    </a>
+                    <a href="#event-archive" class="border-2 border-primary text-primary px-8 py-4 rounded-lg text-lg font-cta font-medium hover:bg-primary hover:text-white literary-transition">
+                        Browse Archive
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Filters -->
+    <section class="py-12 bg-white border-b border-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+                <!-- Filter Options -->
+                <div class="flex flex-wrap gap-4">
+                    <div class="relative">
+                        <select class="appearance-none bg-surface border border-border rounded-lg px-4 py-2 pr-8 text-text-primary font-body focus:outline-none focus:ring-2 focus:ring-accent" onchange="filterEvents('type', this.value)">
+                            <option value="all">All Event Types</option>
+                            <option value="author-reading">Author Readings</option>
+                            <option value="book-launch">Book Launches</option>
+                            <option value="panel-discussion">Panel Discussions</option>
+                            <option value="workshop">Writing Workshops</option>
+                            <option value="festival">Literary Festivals</option>
+                        </select>
+                        <svg class="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-text-secondary pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="relative">
+                        <select class="appearance-none bg-surface border border-border rounded-lg px-4 py-2 pr-8 text-text-primary font-body focus:outline-none focus:ring-2 focus:ring-accent" onchange="filterEvents('format', this.value)">
+                            <option value="all">All Formats</option>
+                            <option value="virtual">Virtual Events</option>
+                            <option value="physical">In-Person Events</option>
+                            <option value="hybrid">Hybrid Events</option>
+                        </select>
+                        <svg class="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-text-secondary pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </div>
+
+                    <div class="relative">
+                        <input type="date" class="bg-surface border border-border rounded-lg px-4 py-2 text-text-primary font-body focus:outline-none focus:ring-2 focus:ring-accent" onchange="filterEvents('date', this.value)" />
+                    </div>
+                </div>
+
+                <!-- Search and Reset -->
+                <div class="flex gap-3">
+                    <div class="relative">
+                        <input type="text" placeholder="Search events..." class="bg-surface border border-border rounded-lg px-4 py-2 pl-10 text-text-primary font-body focus:outline-none focus:ring-2 focus:ring-accent w-64" oninput="searchEvents(this.value)" />
+                        <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                    <button onclick="resetFilters()" class="text-accent hover:text-accent-700 font-cta font-medium px-4 py-2 literary-transition">
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section id="upcoming-events" class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-primary mb-4">Upcoming Events</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">Don't miss these exclusive literary experiences</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <!-- Featured Event -->
+                <div class="lg:col-span-2 bg-white rounded-2xl literary-shadow-prominent overflow-hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div class="relative h-64 lg:h-auto">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" alt="Elena Rodriguez Virtual Reading" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-cta font-medium">
+                                Featured
+                            </div>
+                            <div class="absolute top-4 right-4 bg-success text-white px-3 py-1 rounded-full text-sm font-cta font-medium">
+                                Virtual
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="text-center">
+                                    <div class="text-2xl font-display font-bold text-accent">25</div>
+                                    <div class="text-sm text-text-secondary">SEP</div>
+                                </div>
+                                <div>
+                                    <div class="text-sm text-text-secondary">7:00 PM EST</div>
+                                    <div class="text-sm text-text-secondary">Virtual Event</div>
+                                </div>
+                            </div>
+                            
+                            <h3 class="text-2xl font-display font-bold text-primary mb-3">
+                                An Evening with Elena Rodriguez
+                            </h3>
+                            <p class="text-text-secondary mb-4">
+                                Join acclaimed author Elena Rodriguez for an intimate reading from her latest work "The Midnight Garden Chronicles" followed by a Q&A session about magical realism in contemporary literature.
+                            </p>
+                            
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                    </svg>
+                                    <span class="text-sm text-text-secondary">247 registered</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span class="text-sm text-text-secondary">90 minutes</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <button onclick="registerForEvent('elena-rodriguez-reading')" class="bg-accent text-white px-6 py-3 rounded-lg font-cta font-medium hover:bg-accent-700 literary-transition">
+                                    Register Free
+                                </button>
+                                <button onclick="addToCalendar('elena-rodriguez-reading')" class="border border-primary text-primary px-6 py-3 rounded-lg font-cta font-medium hover:bg-primary hover:text-white literary-transition">
+                                    Add to Calendar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yux2X2vAFoU?si=GaImhXzzpGc_8HSd&amp;start=9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <!-- Event Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="events-grid">
+                <!-- Event Card 1 -->
+                <div class="bg-white rounded-xl literary-shadow hover:literary-shadow-prominent literary-transition overflow-hidden event-card" data-type="book-launch" data-format="hybrid" data-date="2025-09-28">
+                    <div class="relative h-48">
+                        <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=600" alt="The Silent Observatory Book Launch" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/02/16/21/07/books-1203630_960_720.jpg'; this.onerror=null;" />
+                        <div class="absolute top-3 right-3 bg-secondary text-white px-2 py-1 rounded text-xs font-cta font-medium">
+                            Hybrid
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="text-center">
+                                <div class="text-lg font-display font-bold text-accent">28</div>
+                                <div class="text-xs text-text-secondary">SEP</div>
+                            </div>
+                            <div>
+                                <div class="text-sm font-cta font-medium text-primary">Book Launch</div>
+                                <div class="text-xs text-text-secondary">6:00 PM EST</div>
+                            </div>
+                        </div>
+                        
+                        <h4 class="text-lg font-display font-bold text-primary mb-2">
+                            "The Silent Observatory" Launch
+                        </h4>
+                        <p class="text-sm text-text-secondary mb-4">
+                            Marcus Chen celebrates his debut science fiction novel with readings and discussion.
+                        </p>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-text-secondary">New York & Virtual</span>
+                            <button onclick="registerForEvent('silent-observatory-launch')" class="text-accent hover:text-accent-700 font-cta font-medium text-sm literary-transition">
+                                Register →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 2 -->
+                <div class="bg-white rounded-xl literary-shadow hover:literary-shadow-prominent literary-transition overflow-hidden event-card" data-type="panel-discussion" data-format="virtual" data-date="2025-10-05">
+                    <div class="relative h-48">
+                        <img src="https://images.pixabay.com/photo/2017/01/18/08/25/books-1989067_960_720.jpg" alt="Future of Publishing Panel" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=600&auto=format&fit=crop'; this.onerror=null;" />
+                        <div class="absolute top-3 right-3 bg-success text-white px-2 py-1 rounded text-xs font-cta font-medium">
+                            Virtual
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="text-center">
+                                <div class="text-lg font-display font-bold text-accent">05</div>
+                                <div class="text-xs text-text-secondary">OCT</div>
+                            </div>
+                            <div>
+                                <div class="text-sm font-cta font-medium text-primary">Panel Discussion</div>
+                                <div class="text-xs text-text-secondary">2:00 PM EST</div>
+                            </div>
+                        </div>
+                        
+                        <h4 class="text-lg font-display font-bold text-primary mb-2">
+                            The Future of Publishing
+                        </h4>
+                        <p class="text-sm text-text-secondary mb-4">
+                            Industry experts discuss digital transformation and emerging trends in literature.
+                        </p>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-text-secondary">Virtual Event</span>
+                            <button onclick="registerForEvent('future-publishing-panel')" class="text-accent hover:text-accent-700 font-cta font-medium text-sm literary-transition">
+                                Register →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 3 -->
+                <div class="bg-white rounded-xl literary-shadow hover:literary-shadow-prominent literary-transition overflow-hidden event-card" data-type="workshop" data-format="physical" data-date="2025-10-12">
+                    <div class="relative h-48">
+                        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=600&auto=format&fit=crop" alt="Character Development Workshop" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600'; this.onerror=null;" />
+                        <div class="absolute top-3 right-3 bg-warning text-white px-2 py-1 rounded text-xs font-cta font-medium">
+                            In-Person
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="text-center">
+                                <div class="text-lg font-display font-bold text-accent">12</div>
+                                <div class="text-xs text-text-secondary">OCT</div>
+                            </div>
+                            <div>
+                                <div class="text-sm font-cta font-medium text-primary">Workshop</div>
+                                <div class="text-xs text-text-secondary">10:00 AM EST</div>
+                            </div>
+                        </div>
+                        
+                        <h4 class="text-lg font-display font-bold text-primary mb-2">
+                            Character Development Mastery
+                        </h4>
+                        <p class="text-sm text-text-secondary mb-4">
+                            Hands-on workshop with Sarah Williams on creating compelling, authentic characters.
+                        </p>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-text-secondary">Boston, MA</span>
+                            <button onclick="registerForEvent('character-workshop')" class="text-accent hover:text-accent-700 font-cta font-medium text-sm literary-transition">
+                                Register →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 4 -->
+                <div class="bg-white rounded-xl literary-shadow hover:literary-shadow-prominent literary-transition overflow-hidden event-card" data-type="author-reading" data-format="virtual" data-date="2025-10-18">
+                    <div class="relative h-48">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="David Park Reading" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616c9c0d0d0?q=80&w=600&auto=format&fit=crop'; this.onerror=null;" />
+                        <div class="absolute top-3 right-3 bg-success text-white px-2 py-1 rounded text-xs font-cta font-medium">
+                            Virtual
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="text-center">
+                                <div class="text-lg font-display font-bold text-accent">18</div>
+                                <div class="text-xs text-text-secondary">OCT</div>
+                            </div>
+                            <div>
+                                <div class="text-sm font-cta font-medium text-primary">Author Reading</div>
+                                <div class="text-xs text-text-secondary">7:30 PM EST</div>
+                            </div>
+                        </div>
+                        
+                        <h4 class="text-lg font-display font-bold text-primary mb-2">
+                            David Park: "The Memory Keeper"
+                        </h4>
+                        <p class="text-sm text-text-secondary mb-4">
+                            An intimate reading from the acclaimed mystery novel with audience Q&A.
+                        </p>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-text-secondary">Virtual Event</span>
+                            <button onclick="registerForEvent('memory-keeper-reading')" class="text-accent hover:text-accent-700 font-cta font-medium text-sm literary-transition">
+                                Register →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 5 -->
+                <div class="bg-white rounded-xl literary-shadow hover:literary-shadow-prominent literary-transition overflow-hidden event-card" data-type="festival" data-format="physical" data-date="2025-11-02">
+                    <div class="relative h-48">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=600&auto=format&fit=crop" alt="Dominari Literary Festival" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2015/11/19/21/10/glasses-1052010_960_720.jpg'; this.onerror=null;" />
+                        <div class="absolute top-3 right-3 bg-warning text-white px-2 py-1 rounded text-xs font-cta font-medium">
+                            In-Person
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="text-center">
+                                <div class="text-lg font-display font-bold text-accent">02</div>
+                                <div class="text-xs text-text-secondary">NOV</div>
+                            </div>
+                            <div>
+                                <div class="text-sm font-cta font-medium text-primary">Literary Festival</div>
+                                <div class="text-xs text-text-secondary">All Day</div>
+                            </div>
+                        </div>
+                        
+                        <h4 class="text-lg font-display font-bold text-primary mb-2">
+                            Dominari Literary Festival 2025
+                        </h4>
+                        <p class="text-sm text-text-secondary mb-4">
+                            A full day celebrating literature with multiple authors, panels, and activities.
+                        </p>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-text-secondary">Chicago, IL</span>
+                            <button onclick="registerForEvent('dominari-festival')" class="text-accent hover:text-accent-700 font-cta font-medium text-sm literary-transition">
+                                Register →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 6 -->
+                <div class="bg-white rounded-xl literary-shadow hover:literary-shadow-prominent literary-transition overflow-hidden event-card" data-type="workshop" data-format="virtual" data-date="2025-11-15">
+                    <div class="relative h-48">
+                        <img src="https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Poetry Workshop" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop'; this.onerror=null;" />
+                        <div class="absolute top-3 right-3 bg-success text-white px-2 py-1 rounded text-xs font-cta font-medium">
+                            Virtual
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="text-center">
+                                <div class="text-lg font-display font-bold text-accent">15</div>
+                                <div class="text-xs text-text-secondary">NOV</div>
+                            </div>
+                            <div>
+                                <div class="text-sm font-cta font-medium text-primary">Workshop</div>
+                                <div class="text-xs text-text-secondary">3:00 PM EST</div>
+                            </div>
+                        </div>
+                        
+                        <h4 class="text-lg font-display font-bold text-primary mb-2">
+                            Modern Poetry Techniques
+                        </h4>
+                        <p class="text-sm text-text-secondary mb-4">
+                            Explore contemporary poetry forms and techniques with Maria Santos.
+                        </p>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-text-secondary">Virtual Event</span>
+                            <button onclick="registerForEvent('poetry-workshop')" class="text-accent hover:text-accent-700 font-cta font-medium text-sm literary-transition">
+                                Register →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Archive -->
+    <section id="event-archive" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-primary mb-4">Event Archive</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">Catch up on past events with recorded sessions and presentation materials</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Archive Item 1 -->
+                <div class="bg-white rounded-xl literary-shadow hover:literary-shadow-prominent literary-transition overflow-hidden">
+                    <div class="relative h-48">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=600&auto=format&fit=crop" alt="Writing Craft Masterclass Archive" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="absolute top-3 left-3 bg-accent text-white px-2 py-1 rounded text-xs font-cta font-medium">
+                            Recorded
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-text-secondary mb-2">August 15, 2025</div>
+                        <h4 class="text-lg font-display font-bold text-primary mb-2">
+                            Writing Craft Masterclass
+                        </h4>
+                        <p class="text-sm text-text-secondary mb-4">
+                            A comprehensive workshop on narrative structure and character development.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-text-secondary">2.5 hours</span>
+                            <button onclick="watchRecording('writing-craft-masterclass')" class="text-accent hover:text-accent-700 font-cta font-medium text-sm literary-transition">
+                                Watch →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Archive Item 2 -->
+                <div class="bg-white rounded-xl literary-shadow hover:literary-shadow-prominent literary-transition overflow-hidden">
+                    <div class="relative h-48">
+                        <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Genre Fiction Panel Archive" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/02/16/21/07/books-1203630_960_720.jpg'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="absolute top-3 left-3 bg-accent text-white px-2 py-1 rounded text-xs font-cta font-medium">
+                            Recorded
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-text-secondary mb-2">July 28, 2025</div>
+                        <h4 class="text-lg font-display font-bold text-primary mb-2">
+                            The Evolution of Genre Fiction
+                        </h4>
+                        <p class="text-sm text-text-secondary mb-4">
+                            Panel discussion on how genre boundaries are evolving in modern literature.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-text-secondary">1.5 hours</span>
+                            <button onclick="watchRecording('genre-fiction-panel')" class="text-accent hover:text-accent-700 font-cta font-medium text-sm literary-transition">
+                                Watch →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Archive Item 3 -->
+                <div class="bg-white rounded-xl literary-shadow hover:literary-shadow-prominent literary-transition overflow-hidden">
+                    <div class="relative h-48">
+                        <img src="https://images.pixabay.com/photo/2017/01/18/08/25/books-1989067_960_720.jpg" alt="Publishing Industry Insights Archive" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=600&auto=format&fit=crop'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="absolute top-3 left-3 bg-accent text-white px-2 py-1 rounded text-xs font-cta font-medium">
+                            Recorded
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-text-secondary mb-2">June 10, 2025</div>
+                        <h4 class="text-lg font-display font-bold text-primary mb-2">
+                            Publishing Industry Insights
+                        </h4>
+                        <p class="text-sm text-text-secondary mb-4">
+                            Behind-the-scenes look at the modern publishing landscape and trends.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-text-secondary">2 hours</span>
+                            <button onclick="watchRecording('publishing-insights')" class="text-accent hover:text-accent-700 font-cta font-medium text-sm literary-transition">
+                                Watch →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="javascript:void(0)" class="bg-primary text-white px-8 py-4 rounded-lg text-lg font-cta font-medium hover:bg-primary-800 literary-transition">
+                    View Full Archive
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Never Miss a Literary Event</h2>
+            <p class="text-lg text-primary-200 mb-8 max-w-2xl mx-auto">
+                Get notified about upcoming author readings, book launches, and exclusive literary conversations.
+            </p>
+            
+            <form class="max-w-md mx-auto">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Enter your email address" class="flex-1 px-4 py-3 rounded-lg text-primary bg-white focus:outline-none focus:ring-2 focus:ring-accent" required />
+                    <button type="submit" class="bg-accent text-white px-8 py-3 rounded-lg font-cta font-medium hover:bg-accent-700 literary-transition">
+                        Subscribe
+                    </button>
+                </div>
+                <p class="text-sm text-primary-300 mt-4">
+                    Join 10,000+ readers who never miss our literary events.
+                </p>
+            </form>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="bg-primary-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-6">
+                       
+                        <span class="ml-2 text-2xl font-display font-bold text-white">Dominari&trade;</span>
+                    </div>
+                    <p class="text-primary-300 mb-6 max-w-md">
+                        Where exceptional stories find their readers. Curating literary excellence for the modern reader through carefully chosen narratives and meaningful connections.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-primary-400 hover:text-accent literary-transition">
+                            <img src="../icons/facebook-f.svg" alt ="Facebook" style="width:24px;height:24px;margin-right:8px;filter:invert(1)" >
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-400 hover:text-accent literary-transition">
+                            <img src="../icons/instagram.svg" alt ="Instagram" style="width:24px;height:24px;margin-right:8px;filter:invert(1)" >
+                        <a href="javascript:void(0)" class="text-primary-400 hover:text-accent literary-transition">
+                            <img src="../icons/x-twitter.svg" alt ="Twitter" style="width:24px;height:24px;margin-right:8px;filter:invert(1)" >
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-400 hover:text-accent literary-transition">
+                            <img src="../icons/linkedin-in.svg" alt ="LinkedIn" style="width:24px;height:24px;margin-right:8px;filter:invert(1)" >
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-display font-bold mb-6">Explore</h4>
+                    <ul class="space-y-3">
+                        <li><a href="book_catalog.html" class="text-primary-300 hover:text-accent literary-transition">Book Catalog</a></li>
+                        <li><a href="community_hub.html" class="text-primary-300 hover:text-accent literary-transition">Community</a></li>
+                        <li><a href="literary_events.html" class="text-primary-300 hover:text-accent literary-transition">Events</a></li>
+                        <li><a href="about_dominari.html" class="text-primary-300 hover:text-accent literary-transition">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="text-lg font-display font-bold mb-6">Support</h4>
+                    <ul class="space-y-3">
+                        <li><a href="javascript:void(0)" class="text-primary-300 hover:text-accent literary-transition">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-300 hover:text-accent literary-transition">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-300 hover:text-accent literary-transition">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-300 hover:text-accent literary-transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 mt-12 pt-8 text-center">
+                <p class="text-primary-400">
+                    <strong>© <span id="year"></span> Dominari Media</strong>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuButton = event.target.closest('button');
+            
+            if (!menuButton && !mobileMenu.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Event filtering functionality
+        function filterEvents(filterType, value) {
+            const eventCards = document.querySelectorAll('.event-card');
+            
+            eventCards.forEach(card => {
+                if (value === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    const cardValue = card.getAttribute(`data-${filterType}`);
+                    if (cardValue === value) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // Search functionality
+        function searchEvents(query) {
+            const eventCards = document.querySelectorAll('.event-card');
+            const searchTerm = query.toLowerCase();
+            
+            eventCards.forEach(card => {
+                const title = card.querySelector('h4').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Reset filters
+        function resetFilters() {
+            const eventCards = document.querySelectorAll('.event-card');
+            const selects = document.querySelectorAll('select');
+            const searchInput = document.querySelector('input[type="text"]');
+            const dateInput = document.querySelector('input[type="date"]');
+            
+            eventCards.forEach(card => {
+                card.style.display = 'block';
+            });
+            
+            selects.forEach(select => {
+                select.value = 'all';
+            });
+            
+            if (searchInput) searchInput.value = '';
+            if (dateInput) dateInput.value = '';
+        }
+
+        // Event registration
+        function registerForEvent(eventId) {
+            alert(`Registration successful for event: ${eventId}. You will receive a confirmation email shortly.`);
+        }
+
+        // Add to calendar
+        function addToCalendar(eventId) {
+            alert(`Event added to your calendar: ${eventId}`);
+        }
+
+        // Watch recording
+        function watchRecording(eventId) {
+            alert(`Opening recording for: ${eventId}`);
+        }
+
+        // Newsletter form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            if (email) {
+                alert('Thank you for subscribing! You\'ll receive notifications about upcoming literary events.');
+                this.reset();
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+<script src="../js/year.js" ></script>
+</body>
+</html>

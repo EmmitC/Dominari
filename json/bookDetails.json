@@ -1,0 +1,55 @@
+[
+  {
+    "slug": "dead-dreams-are-alive",
+    "pages": 220,
+    "language": "English",
+    "rating": 4.7,
+    "reviewCount": 134,
+    "reviews": [
+      {
+        "reviewer": "Sarah M.",
+        "date": "2 days ago",
+        "rating": 5,
+        "text": "Absolutely mesmerizing. This collection spoke directly to my soul. The family themes are universal."
+      },
+      {
+        "reviewer": "Michael R.",
+        "date": "1 week ago",
+        "rating": 4,
+        "text": "A bold and inspiring work. Some poems hit harder than others, but overall very moving."
+      }
+    ]
+  },
+  {
+    "slug": "did-we-die",
+    "pages": 180,
+    "language": "English",
+    "rating": 4.6,
+    "reviewCount": 98,
+    "reviews": []
+  },
+  {
+    "slug": "secrets-carried-by-the-wind",
+    "pages": 260,
+    "language": "English",
+    "rating": 4.8,
+    "reviewCount": 210,
+    "reviews": []
+  },
+  {
+    "slug": "threads-of-time",
+    "pages": 305,
+    "language": "English",
+    "rating": 4.9,
+    "reviewCount": 310,
+    "reviews": []
+  },
+  {
+    "slug": "love-and-lavender",
+    "pages": 150,
+    "language": "English",
+    "rating": 4.5,
+    "reviewCount": 75,
+    "reviews": []
+  }
+]

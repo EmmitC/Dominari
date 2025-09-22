@@ -1,0 +1,63 @@
+
+[
+  {
+    "title": "Dead Dreams Are Alive",
+    "author": "Jasper Okedi",
+    "cover": "../books/dead_dreams_are_alive.jpg",
+    "date": "2024-02-25",
+    "description": "This is part of a poetry book series (Book 1). All my poetry is to empower each member of the family unit to fulfill their individual roles. The man is called to be the Provider & Protector, as the woman is meant to be the Receiver, Nurturer & Encourager mainly.",
+    "badge": "Bestseller",
+    "genre": "Poetry",
+    "price": "$19.99"
+  },
+  {
+    "title": "DID WE DIE?",
+    "author": "Jasper Okedi",
+    "cover": "../books/did_we_die.jpg",
+    "date": "2024-02-22",
+    "description": "This is part of a poetry book series (Book 2). All my poetry is to empower each member of the family unit to fulfill their individual roles. The man is called to be the Provider & Protector, as the woman is meant to be the Receiver, Nurturer & Encourager mainly.",
+    "badge": "New Release",
+    "genre": "Poetry / Social Commentary",
+    "price": "$17.99"
+  },
+  {
+    "title": "SECRETS CARRIED BY THE WIND",
+    "author": "Jasper Okedi",
+    "cover": "../books/secrets_carried_by_the_wind.jpg",
+    "date": "2024-02-24",
+    "description": "This is part of a poetry book series (Book 3). All my poetry is to empower each member of the family unit to fulfill their individual roles. The man is called to be the Provider & Protector, as the woman is meant to be the Receiver, Nurturer & Encourager mainly.",
+    "badge": "Staff Pick",
+    "genre": "Poetry / Inspirational",
+    "price": "$21.50"
+  },
+  {
+    "title": "THREADS OF TIME",
+    "author": "Jasper Okedi",
+    "cover": "../books/threads_of_time.jpg",
+    "date": "2024-02-25",
+    "description": "This is part of a poetry book series (Book 4). All my poetry is to empower each member of the family unit to fulfill their individual roles. The man is called to be the Provider & Protector, as the woman is meant to be the Receiver, Nurturer & Encourager mainly.",
+    "badge": "Collector's Edition",
+    "genre": "Poetry / Family",
+    "price": "$24.99"
+  },
+  {
+    "title": "LOVE & LAVENDER",
+    "author": "Jasper Okedi",
+    "cover": "../books/love_and_lavender.jpg",
+    "date": "2022-10-05",
+    "description": "This is the first of a collection of a “ten poetry book series” of intimate expressions exchanged between Akim & Akipi. The masculine spirit of Akim sings from the position of leadership and security; The feminine spirit of Akipi sings as one in the anchoring of feminine submission.",
+    "badge": "Classic",
+    "genre": "Romantic Poetry",
+    "price": "$15.99"
+  },
+  {
+    "title":"SOULS SOLILOQUY",
+    "author":"Dominari Publishing",
+    "cover":"../books/#1.jpg",
+    "date":"2025-11-03",
+    "description":"Dive into the inaugural issue of 'Souls Soliloquy,' a literary magazine by Dominari Publishing. This edition features a curated selection of contemporary poetry, short stories, and thought-provoking essays from emerging and established writers. Explore themes of identity, resilience, and the human experience through diverse voices and perspectives. 'Souls Soliloquy' is your gateway to discovering fresh literary talent and engaging narratives that resonate with the soul.",
+    "badge":"Issue #1",
+    "genre":"Literary Magazine",
+    "price":"$9.99"
+  }
+]

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Dominari&trade;</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Discover the story behind Dominari Publishing. Learn about our commitment to literary excellence, publishing philosophy, and the passionate team curating exceptional narratives for modern readers." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdominarip9155back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-white literary-shadow sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="./index2.html" class="flex items-center">
+                        <span class="ml-2 text-xl font-display font-bold text-primary">Dominari&trade;</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="./index2.html" class="text-text-secondary hover:text-primary literary-transition px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="./books.html" class="text-text-secondary hover:text-primary literary-transition px-3 py-2 text-sm font-medium">Books</a>
+                        <a href="community_hub.html" class="text-text-secondary hover:text-primary literary-transition px-3 py-2 text-sm font-medium">Community</a>
+                        <a href="./events.html" class="text-text-secondary hover:text-primary literary-transition px-3 py-2 text-sm font-medium">Events</a>
+                        <a href="./about.html" class="text-primary font-medium border-b-2 border-accent px-3 py-2 text-sm">About</a>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="./books.html" class="bg-accent text-white px-6 py-2 rounded-md text-sm font-cta font-medium hover:bg-accent-700 literary-transition">
+                        Explore Books
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary literary-transition" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-border">
+                    <a href="./index2.html" class="text-text-secondary hover:text-primary block px-3 py-2 text-base literary-transition">Home</a>
+                    <a href="./books.html" class="text-text-secondary hover:text-primary block px-3 py-2 text-base literary-transition">Books</a>
+                    <a href="community_hub.html" class="text-text-secondary hover:text-primary block px-3 py-2 text-base literary-transition">Community</a>
+                    <a href="./events.html" class="text-text-secondary hover:text-primary block px-3 py-2 text-base literary-transition">Events</a>
+                    <a href="./about.html" class="text-primary font-medium block px-3 py-2 text-base border-l-4 border-accent bg-accent-50">About</a>
+                    <a href="./books.html" class="bg-accent text-white block px-3 py-2 text-base font-medium rounded-md mt-4 text-center">Explore Books</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 via-surface to-accent-50 overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-5"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary leading-tight">
+                            Where Literary 
+                            <span class="text-accent">Excellence</span> 
+                            Meets Purpose
+                        </h1>
+                        <p class="text-lg md:text-xl text-text-secondary font-body leading-relaxed">
+                            At Dominari Publishing, we believe every exceptional story deserves to find its perfect reader. We're more than publishers—we're curators of literary experiences that transform, inspire, and endure.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="./books.html" class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-cta font-medium hover:bg-accent-700 literary-transition text-center">
+                            Discover Our Books
+                        </a>
+                        <a href="community_hub.html" class="border-2 border-primary text-primary px-8 py-4 rounded-lg text-lg font-cta font-medium hover:bg-primary hover:text-white literary-transition text-center">
+                            Join Our Mission
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Hero Visual -->
+                <div class="relative">
+                    <div class="grid grid-cols-2 gap-4 transform rotate-3 hover:rotate-0 literary-transition-medium">
+                        <div class="space-y-4">
+                            <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Literary Excellence" class="w-full h-64 object-cover rounded-lg literary-shadow hover:literary-shadow-prominent literary-transition" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                            <img src="https://images.pixabay.com/photo/2016/02/16/21/07/books-1203630_960_720.jpg" alt="Publishing Heritage" class="w-full h-48 object-cover rounded-lg literary-shadow hover:literary-shadow-prominent literary-transition" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        </div>
+                        <div class="space-y-4 mt-8">
+                            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=800&auto=format&fit=crop" alt="Modern Publishing" class="w-full h-48 object-cover rounded-lg literary-shadow hover:literary-shadow-prominent literary-transition" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2015/11/19/21/10/glasses-1052010_960_720.jpg'; this.onerror=null;" />
+                            <img src="https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Literary Community" class="w-full h-64 object-cover rounded-lg literary-shadow hover:literary-shadow-prominent literary-transition" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-display font-bold text-primary mb-6">Our Story</h2>
+                        <div class="space-y-6 text-lg text-text-secondary font-body leading-relaxed">
+                            <p>
+                                Founded in 2019 by a collective of literary enthusiasts, editors, and industry veterans, Dominari Publishing emerged from a simple yet profound belief: exceptional stories deserve exceptional care.
+                            </p>
+                            <p>
+                                We witnessed too many remarkable manuscripts lost in the noise of mass publishing, too many readers struggling to discover their next literary obsession, and too many authors feeling disconnected from their audience.
+                            </p>
+                            <p>
+                                Dominari was born to bridge these gaps—creating a publishing house that operates more like a literary curator, where every book is chosen not just for its commercial potential, but for its ability to move, challenge, and transform readers.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-surface p-6 rounded-xl">
+                        <blockquote class="text-lg font-accent italic text-primary mb-4">
+                            "We don't just publish books; we cultivate literary experiences that create lasting connections between stories and souls."
+                        </blockquote>
+                        <div class="text-sm text-text-secondary">— Sarah Chen, Founder & Editorial Director</div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="../images/Founder&CEO.jpg" alt="Dominari Publishing Founder" class="w-full h-96 object-cover rounded-2xl literary-shadow-prominent" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616c9c0d0d0?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                    <div class="absolute bottom-4 left-4 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg p-4">
+                        <div class="text-sm font-cta font-medium text-accent">Founder & CEO</div>
+                        <div class="text-lg font-display font-bold text-primary">Jasper Okedi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="py-20 bg-gradient-to-br from-accent-50 to-secondary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-primary mb-4">Our Mission & Values</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">The principles that guide every decision, every publication, and every relationship we build</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Literary Excellence -->
+                <div class="bg-white rounded-2xl p-8 literary-shadow hover:literary-shadow-prominent literary-transition text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-primary mb-4">Literary Excellence</h3>
+                    <p class="text-text-secondary">We champion quality over quantity, seeking stories that demonstrate exceptional craft, originality, and emotional resonance.</p>
+                </div>
+
+                <!-- Author Partnership -->
+                <div class="bg-white rounded-2xl p-8 literary-shadow hover:literary-shadow-prominent literary-transition text-center">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-primary mb-4">Author Partnership</h3>
+                    <p class="text-text-secondary">We believe in collaborative relationships, supporting authors throughout their creative journey with transparency and respect.</p>
+                </div>
+
+                <!-- Reader Connection -->
+                <div class="bg-white rounded-2xl p-8 literary-shadow hover:literary-shadow-prominent literary-transition text-center">
+                    <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-primary mb-4">Reader Connection</h3>
+                    <p class="text-text-secondary">Every book we publish is chosen with our readers in mind, creating meaningful connections between stories and souls.</p>
+                </div>
+
+                <!-- Cultural Impact -->
+                <div class="bg-white rounded-2xl p-8 literary-shadow hover:literary-shadow-prominent literary-transition text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-primary mb-4">Cultural Impact</h3>
+                    <p class="text-text-secondary">We seek stories that contribute to important conversations, challenge perspectives, and enrich our collective understanding.</p>
+                </div>
+
+                <!-- Sustainability -->
+                <div class="bg-white rounded-2xl p-8 literary-shadow hover:literary-shadow-prominent literary-transition text-center">
+                    <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5 0-9-4-9-9s4-9 9-9"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-primary mb-4">Sustainability</h3>
+                    <p class="text-text-secondary">We're committed to environmentally responsible publishing practices and supporting sustainable literary ecosystems.</p>
+                </div>
+
+                <!-- Innovation -->
+                <div class="bg-white rounded-2xl p-8 literary-shadow hover:literary-shadow-prominent literary-transition text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-primary mb-4">Innovation</h3>
+                    <p class="text-text-secondary">We embrace new technologies and approaches that enhance the reading experience while honoring literary traditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-primary mb-4">Meet Our Team</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">Literary professionals united by a shared passion for exceptional storytelling</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="text-center group">
+                    <div class="relative mb-6">
+                        <img src="../images/Founder&CEO.jpg" alt="Jasper Okedi - Founder & CEO" class="w-48 h-48 object-cover rounded-full mx-auto literary-shadow group-hover:literary-shadow-prominent literary-transition" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616c9c0d0d0?q=80&w=400&auto=format&fit=crop'; this.onerror=null;" />
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-primary mb-2">Jasper Okedi</h3>
+                    <p class="text-accent font-cta font-medium mb-3">Founder & CEO</p>
+                    <p class="text-text-secondary text-sm leading-relaxed">Former senior editor at Penguin Random House with 15 years of experience in literary fiction. MFA from Columbia University.</p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="text-center group">
+                    <div class="relative mb-6">
+                        <img src="../images/Senior_director.jpg" alt="Hood Lubowa - Senior Director & Head of Legal Affairs" class="w-48 h-48 object-cover rounded-full mx-auto literary-shadow group-hover:literary-shadow-prominent literary-transition" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop'; this.onerror=null;" />
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-primary mb-2">Hood Lubowa</h3>
+                    <p class="text-accent font-cta font-medium mb-3">Senior Director & Head Of Legal Affairs</p>
+                    <p class="text-text-secondary text-sm leading-relaxed">Specializes in contemporary fiction and emerging voices. Previously at HarperCollins, with a keen eye for debut authors.</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="text-center group">
+                    <div class="relative mb-6">
+                        <img src="../images/Senior Director & Board Chairman.jpg" alt="Kizito Vianney Sydney - Senior Director & Board Chairman" class="w-48 h-48 object-cover rounded-full mx-auto literary-shadow group-hover:literary-shadow-prominent literary-transition" loading="lazy" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;" />
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-primary mb-2"> Kizito Vianney Sydney</h3>
+                    <p class="text-accent font-cta font-medium mb-3">Senior Director & Board Chairman</p>
+                    <p class="text-text-secondary text-sm leading-relaxed">Award-winning book designer and brand strategist. Creates visual identities that capture the essence of each literary work.</p>
+                </div>
+
+                <!--Team Member 6-->
+                <div class="text-center group">
+                    <div class="relative mb-6">
+                        <img src="../images/DirectorOfWriting&Publishing.jpg" alt="Anne Mbabazi - Director of Writing & Publishing" class="w-48 h-48 object-cover rounded-full mx-auto literary-shadow group-hover:literary-shadow-prominent literary-transition" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;" />
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-primary mb-2">Anne Mbabazi</h3>
+                    <p class="text-accent font-cta font-medium mb-3">Director Of Writing & Publishing:</p>
+                    <p class="text-text-secondary text-sm leading-relaxed">Leads our digital transformation initiatives, enhancing the reading experience through innovative technology solutions.</p>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="text-center group">
+                    <div class="relative mb-6">
+                        <img src="../images/Director_of_Productions.jpg" alt="Bolton Malik - Director of Productions" class="w-48 h-48 object-cover rounded-full mx-auto literary-shadow group-hover:literary-shadow-prominent literary-transition" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/09/38/adult-1868750_960_720.jpg'; this.onerror=null;" />
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-primary mb-2">Bolton Malik</h3>
+                    <p class="text-accent font-cta font-medium mb-3">Director of Productions</p>
+                    <p class="text-text-secondary text-sm leading-relaxed">Builds bridges between authors and readers through innovative community programs and digital engagement strategies.</p>
+                </div>
+
+                 <!-- Team Member 8 -->
+                 <div class="text-center group">
+                    <div class="relative mb-6">
+                        <img src="../images/Senior Creative Director & Web Developer.jpg" alt="Emmit Christopher-Senior Creative Director & Web Developer" class="w-48 h-48 object-cover rounded-full mx-auto literary-shadow group-hover:literary-shadow-prominent literary-transition" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;" />
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-primary mb-2">Emmit Christopher</h3>
+                    <p class="text-accent font-cta font-medium mb-3">Senior Creative Director & Web Developer.</p>
+                    <p class="text-text-secondary text-sm leading-relaxed">Fosters a positive workplace culture, ensuring our team is motivated, supported, and aligned with our mission.</p>
+
+            </div>
+
+                <!-- Team Member 5 -->
+                <div class="text-center group">
+                    <div class="relative mb-6">
+                        <img src="../images/HeadofSales&Marketing.jpg" alt="Amara Johnson - Rights & Partnerships" class="w-48 h-48 object-cover rounded-full mx-auto literary-shadow group-hover:literary-shadow-prominent literary-transition" loading="lazy" onerror="this.src='https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;" />
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-primary mb-2">Nansubuga Sherlie Miriam</h3>
+                    <p class="text-accent font-cta font-medium mb-3">Head of Sales & Marketing</p>
+                    <p class="text-text-secondary text-sm leading-relaxed">International rights specialist with expertise in global literary markets and strategic publishing partnerships.</p>
+                </div>
+
+                <!-- Team Member 6 -->
+                <div class="text-center group">
+                    <div class="relative mb-6">
+                        <img src="../images/HeadOfFilm&MovieProductions.jpg" alt="Genius - Operations Director" class="w-48 h-48 object-cover rounded-full mx-auto literary-shadow group-hover:literary-shadow-prominent literary-transition" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'; this.onerror=null;" />
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-primary mb-2">Genius</h3>
+                    <p class="text-accent font-cta font-medium mb-3">Head Of Film & Movie Productions</p>
+                    <p class="text-text-secondary text-sm leading-relaxed">Ensures seamless publishing operations from manuscript to market, with expertise in sustainable publishing practices.</p>
+                </div>
+
+                
+
+                <!-- Team Member 7 -->
+                <div class="text-center group">
+                    <div class="relative mb-6">
+                        <img src="../images/ChiefOfOperations.jpg" alt="Caleb Kimara - Chief Of Operations" class="w-48 h-48 object-cover rounded-full mx-auto literary-shadow group-hover:literary-shadow-prominent literary-transition" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400&auto=format&fit=crop'; this.onerror=null;" />
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-primary mb-2">Caleb Kimara</h3>
+                    <p class="text-accent font-cta font-medium mb-3">Chief Of Operations</p>
+                    <p class="text-text-secondary text-sm leading-relaxed">Manages our financial health, ensuring we can continue to invest in groundbreaking literary projects and initiatives.</p>
+                </div>
+
+               
+        </div>
+    </section>
+
+    <!-- Awards & Recognition -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-primary mb-4">Awards & Recognition</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">Celebrating excellence in publishing and literary achievement</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Award 1 -->
+                <div class="bg-white rounded-xl p-6 literary-shadow hover:literary-shadow-prominent literary-transition text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-display font-bold text-primary mb-2">Publisher of the Year</h3>
+                    <p class="text-sm text-text-secondary mb-2">Independent Book Publishers Association</p>
+                    <p class="text-xs text-accent font-cta font-medium">2024</p>
+                </div>
+
+                <!-- Award 2 -->
+                <div class="bg-white rounded-xl p-6 literary-shadow hover:literary-shadow-prominent literary-transition text-center">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-display font-bold text-primary mb-2">Best Literary Fiction</h3>
+                    <p class="text-sm text-text-secondary mb-2">National Book Critics Circle</p>
+                    <p class="text-xs text-accent font-cta font-medium">2023</p>
+                </div>
+
+                <!-- Award 3 -->
+                <div class="bg-white rounded-xl p-6 literary-shadow hover:literary-shadow-prominent literary-transition text-center">
+                    <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-display font-bold text-primary mb-2">Sustainability Leader</h3>
+                    <p class="text-sm text-text-secondary mb-2">Green Publishing Initiative</p>
+                    <p class="text-xs text-accent font-cta font-medium">2024</p>
+                </div>
+
+                <!-- Award 4 -->
+                <div class="bg-white rounded-xl p-6 literary-shadow hover:literary-shadow-prominent literary-transition text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-display font-bold text-primary mb-2">Innovation Award</h3>
+                    <p class="text-sm text-text-secondary mb-2">Digital Publishing Alliance</p>
+                    <p class="text-xs text-accent font-cta font-medium">2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publishing Ethics & Transparency -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-primary mb-4">Our Commitment</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">Transparency, ethics, and sustainability guide every aspect of our publishing practice</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Publishing Ethics -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-display font-bold text-primary">Publishing Ethics</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-cta font-medium text-primary">Fair Author Contracts</h4>
+                                <p class="text-text-secondary text-sm">Transparent terms, competitive royalties, and author-friendly rights retention.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-cta font-medium text-primary">Editorial Integrity</h4>
+                                <p class="text-text-secondary text-sm">Collaborative editing that respects authorial voice while enhancing literary quality.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-cta font-medium text-primary">Diverse Voices</h4>
+                                <p class="text-text-secondary text-sm">Actively seeking and supporting underrepresented authors and perspectives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sustainability Practices -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-display font-bold text-primary">Sustainability Practices</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-6 h-6 bg-success rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-cta font-medium text-primary">Eco-Friendly Production</h4>
+                                <p class="text-text-secondary text-sm">FSC-certified paper, soy-based inks, and carbon-neutral shipping options.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-6 h-6 bg-success rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-cta font-medium text-primary">Digital Innovation</h4>
+                                <p class="text-text-secondary text-sm">Reducing environmental impact through digital-first marketing and distribution.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-6 h-6 bg-success rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-cta font-medium text-primary">Community Impact</h4>
+                                <p class="text-text-secondary text-sm">Supporting literacy programs and local bookstores in underserved communities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Join Our Literary Journey</h2>
+            <p class="text-lg text-primary-200 mb-8 max-w-2xl mx-auto">
+                Whether you're a reader seeking your next great book, an author with a story to tell, or a literary professional looking to collaborate, we invite you to be part of the Dominari community.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="./books.html" class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-cta font-medium hover:bg-accent-700 literary-transition">
+                    Explore Our Books
+                </a>
+                <a href="community_hub.html" class="border-2 border-accent text-accent px-8 py-4 rounded-lg text-lg font-cta font-medium hover:bg-accent hover:text-white literary-transition">
+                    Join Our Community
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-6">
+                       
+                        <span class="ml-2 text-2xl font-display font-bold text-white">Dominari&trade;</span>
+                    </div>
+                    <p class="text-primary-300 mb-6 max-w-md">
+                        Where exceptional stories find their readers. Curating literary excellence for the modern reader through carefully chosen narratives and meaningful connections.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-primary-400 hover:text-accent literary-transition">
+                            <img src="../icons/facebook-f.svg" alt ="Facebook" style="width:24px;height:24px;margin-right:8px;filter:invert(1)" >
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-400 hover:text-accent literary-transition">
+                            <img src="../icons/instagram.svg" alt ="Instagram" style="width:24px;height:24px;margin-right:8px;filter:invert(1)" >
+                        <a href="javascript:void(0)" class="text-primary-400 hover:text-accent literary-transition">
+                            <img src="../icons/x-twitter.svg" alt ="Twitter" style="width:24px;height:24px;margin-right:8px;filter:invert(1)" >
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-400 hover:text-accent literary-transition">
+                            <img src="../icons/linkedin-in.svg" alt ="LinkedIn" style="width:24px;height:24px;margin-right:8px;filter:invert(1)" >
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-display font-bold mb-6">Explore</h4>
+                    <ul class="space-y-3">
+                        <li><a href="book_catalog.html" class="text-primary-300 hover:text-accent literary-transition">Book Catalog</a></li>
+                        <li><a href="community_hub.html" class="text-primary-300 hover:text-accent literary-transition">Community</a></li>
+                        <li><a href="literary_events.html" class="text-primary-300 hover:text-accent literary-transition">Events</a></li>
+                        <li><a href="about_dominari.html" class="text-primary-300 hover:text-accent literary-transition">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="text-lg font-display font-bold mb-6">Support</h4>
+                    <ul class="space-y-3">
+                        <li><a href="javascript:void(0)" class="text-primary-300 hover:text-accent literary-transition">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-300 hover:text-accent literary-transition">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-300 hover:text-accent literary-transition">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-300 hover:text-accent literary-transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 mt-12 pt-8 text-center">
+                <p class="text-primary-400">
+                    <strong>© <span id="year"></span> Dominari Media</strong>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuButton = event.target.closest('button');
+            
+            if (!menuButton && !mobileMenu.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animation for team member cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe team member cards for animation
+        document.querySelectorAll('.group').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+<script src="../js/year.js" ></script>
+</body>
+</html>
