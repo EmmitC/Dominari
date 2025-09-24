@@ -11,7 +11,7 @@
 <body class="bg-background text-text-primary">
     <!-- Navigation Header -->
     <header class="bg-white literary-shadow sticky top-0 z-50">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between px-4 py-1">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex-shrink-0">
@@ -25,7 +25,7 @@
                 <div class="hidden md:block">
                     
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <button id="btn-theme" class="pill" title="Toggle theme">🌙</button>
+                        
                         <a href="../index2.html" class="text-text-secondary hover:text-primary literary-transition px-3 py-2 text-sm font-medium">Home</a>
                         <a href="./books.html" class="text-primary font-medium border-b-2 border-accent px-3 py-2 text-sm">Books</a>
                         <a href="community_hub.html" class="text-text-secondary hover:text-primary literary-transition px-3 py-2 text-sm font-medium">Community</a>
@@ -41,20 +41,22 @@
                     </a>
                 </div>
 
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
-                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary literary-transition" onclick="toggleMobileMenu()">
+                
+            </div>
+              <!-- Mobile menu button -->
+                <div class="md:hidden ml-auto">
+                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary literary-transition "  onclick="toggleMobileMenu()">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
                     </button>
                 </div>
-            </div>
-
-            <!-- Mobile Navigation Menu -->
+            
+        </nav>
+        <!-- Mobile Navigation Menu -->
             <div id="mobile-menu" class="md:hidden hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-border">
-                    <a href="../index.html" class="text-text-secondary hover:text-primary block px-3 py-2 text-base literary-transition">Home</a>
+                    <a href="../index2.html" class="text-text-secondary hover:text-primary block px-3 py-2 text-base literary-transition">Home</a>
                     <a href="./books.html" class="text-primary font-medium block px-3 py-2 text-base border-l-4 border-accent bg-accent-50">Books</a>
                     <a href="community_hub.html" class="text-text-secondary hover:text-primary block px-3 py-2 text-base literary-transition">Community</a>
                     <a href="./events.html" class="text-text-secondary hover:text-primary block px-3 py-2 text-base literary-transition">Events</a>
@@ -62,7 +64,6 @@
                     <a href="community_hub.html" class="bg-accent text-white block px-3 py-2 text-base font-medium rounded-md mt-4 text-center">Join Community</a>
                 </div>
             </div>
-        </nav>
     </header>
 
     <!-- Hero Section -->

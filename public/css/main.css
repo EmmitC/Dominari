@@ -1915,6 +1915,15 @@ p.lead{
   color:var(--c-accent);
 }
 
+.md\:hidden{
+  float: right;
+  position: static;
+}
+
+.md\:hidden button svg path{
+  position: ;
+}
+
 /* Enhanced styling for parallax mission section */
 
 section.parallax.mission {
